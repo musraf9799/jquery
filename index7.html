@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a =["sunjay","aman","karn"];
+        // a.forEach(function(value){
+        //     document.write(value + "<br>");
+
+        // });
+
+        var a ={
+            fname : 'yahoo<br>',
+            lname :   'baba<br>',
+            age  :   '25<br>',
+             email:   'musraf9799@gmail.com', 
+             favMovies: ['dhom','sholay','hum'],
+             living :{
+                'city': 'jaipur',
+                'countery':'india',
+             },
+             
+             
+            salary : function(){
+            return 25000;
+            
+            },
+            fullname : function(){
+            return this.fname + " " + this.lname;
+            }
+            
+        };
+        // document.write(a);
+        console.log(a);
+         document.write(a.living.city);   
+        //  document.write(a.lname);
+        //  document.write(a.age);
+        //  document.write(a.email);   
+
+        
+        
+
+    
+    </script>
+    
+</body>
+</html>

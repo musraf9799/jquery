@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Selector Example</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: lightgray;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            font-family: Arial;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Class Selector Example</h2>
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+<p>Junaid </p>
+    <br><br>
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            // class selector
+            let boxes = document.getElementsByClassName("box");
+
+            // loop chalayenge
+            for (let i = 0; i < boxes.length; i++) {
+                boxes[i].style.backgroundColor = "green";
+                boxes[i].style.color = "white";
+            }
+        }
+    </script>
+
+</body>
+</html>

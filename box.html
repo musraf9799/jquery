@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Box</title>
+  <style>
+    body{
+  margin: 0;
+  padding: 0;
+}
+
+/* Default (Desktop) */
+.box{
+  width: 50%;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  margin: 20px auto;
+}
+
+/* Tablet */
+@media (max-width: 768px){
+  .box{
+    width: 70%;
+    background-color: green;
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px){
+  .box{
+    width: 90%;
+    background-color: red;
+    font-size: 18px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    Responsive Box
+  </div>
+
+</body>
+</html>
